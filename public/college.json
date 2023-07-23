@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "University of Oxford",
+    "image": "https://media.istockphoto.com/id/521381227/photo/oxford.jpg?s=612x612&w=0&k=20&c=3nw7xst2-SHwr2I85NHKOmULDR2yFWcTfL3S_PCdoUg=",
+    "admissionDate": "2023-09-01",
+    "researchHistory": 250,
+    "events": ["TechFest 2023", "Cultural Night", "Alumni Meet"],
+    "sports": ["Football", "Basketball", "Swimming"]
+  },
+  {
+    "id": "2",
+    "name": "Harvard University",
+    "image": "https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504819.jpg?size=626&ext=jpg&ga=GA1.1.57407676.1683021171&semt=ais",
+    "admissionDate": "2023-08-15",
+    "researchHistory": 200,
+    "events": ["Science Expo", "Literary Festival", "Music Fest"],
+    "sports": ["Soccer", "Tennis", "Volleyball"]
+  },
+  {
+    "id": "3",
+    "name": "Stanford University",
+    "image": "https://media.istockphoto.com/id/1282845420/photo/usa-stanford-university-editorial.jpg?s=612x612&w=0&k=20&c=jsLvTTWSODHTZRe1SjW7aa3HpbKXlbu5-SJoKbjlHyY=",
+    "admissionDate": "2023-09-15",
+    "researchHistory": 180,
+    "events": ["Innovation Fair", "Film Festival", "Career Expo"],
+    "sports": ["Baseball", "Golf", "Track and Field"]
+  },
+  {
+    "id": "4",
+    "name": "Massachusetts Institute of Technology",
+    "image": "https://media.istockphoto.com/id/861325478/photo/cambridge-massachusetts-skyline.jpg?s=612x612&w=0&k=20&c=ahBQvZkmhFMt9qpMEFmbjEOCu69uF7qckLbpUv7ieWM=",
+    "admissionDate": "2023-10-01",
+    "researchHistory": 300,
+    "events": ["Hackathon", "Dance Showcase", "Entrepreneurship Summit"],
+    "sports": ["Cricket", "Badminton", "Table Tennis"]
+  },
+  {
+    "id": "5",
+    "name": "University of Cambridge",
+    "image": "https://media.istockphoto.com/id/465674645/photo/a-view-of-cambridge-university-and-kings-college-chapel.jpg?s=612x612&w=0&k=20&c=XnOVVXkxGD7NN5CbPf3HC128CTPZ4eLSiZvc1bmfCd0=",
+    "admissionDate": "2023-09-20",
+    "researchHistory": 220,
+    "events": ["Art Exhibition", "Food Festival", "Business Symposium"],
+    "sports": ["Rugby", "Hockey", "Chess"]
+  },
+  {
+    "id": "6",
+    "name": "California Institute of Technology",
+    "image": "https://media.istockphoto.com/id/692318982/photo/wide-angle-san-diego-downtown.jpg?s=612x612&w=0&k=20&c=VUT4nbnF9MqyB-RGwu1xtoSr6N10OXXtRx7RNLo87qg=",
+    "admissionDate": "2023-08-30",
+    "researchHistory": 170,
+    "events": ["Robotics Showcase", "Fashion Show", "Environmental Summit"],
+    "sports": ["Swimming", "Water Polo", "Fencing"]
+  }
+]

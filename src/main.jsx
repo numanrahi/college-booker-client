@@ -4,9 +4,13 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import HomeLayout from "./Layout/HomeLayout.jsx";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import Login from "./components/Login/Login.jsx";
+import Register from "./components/Register/Register.jsx";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import AuthProvider from "./Providers/AuthProvider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,17 +18,24 @@ const router = createBrowserRouter([
     element: <HomeLayout></HomeLayout>,
   },
   {
-    path:'/login',
-    element:<Login></Login>
+    path: "/login",
+    element: <Login></Login>,
   },
   {
-    path:"*",
-    element: <NotFound></NotFound>
-  }
+    path: "/register",
+    element: <Register></Register>,
+  },
+  {
+    path: "*",
+    element: <NotFound></NotFound>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </AuthProvider>
   </React.StrictMode>
 );

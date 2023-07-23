@@ -45,13 +45,13 @@ const Login = () => {
             </div>
           </Form.Group>
           <br />
-          <Button className="w-100 bg-color my-3" type="submit">
+          <Button className="w-100 bg-primary my-3" type="submit">
             Login
           </Button>
           <div className="text-center">--------- or ----------</div>
           <Button
             //   onClick={handleGoogleSignIn}
-            className="w-100 bg-color my-3"
+            className="w-100 bg-primary my-3"
             type="submit"
           >
             Login with Google

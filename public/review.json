@@ -1,0 +1,32 @@
+[
+  {
+    "collegeId": "1",
+    "rating": 4.5,
+    "comment": "Example University is a fantastic place for learning and growth."
+  },
+  {
+    "collegeId": "2",
+    "rating": 3.8,
+    "comment": "Sample College has good sports facilities but needs improvement in academics."
+  },
+  {
+    "collegeId": "3",
+    "rating": 4.5,
+    "comment": "Example University is a fantastic place for learning and growth."
+  },
+  {
+    "collegeId": "4",
+    "rating": 3.8,
+    "comment": "Sample College has good sports facilities but needs improvement in academics."
+  },
+  {
+    "collegeId": "5",
+    "rating": 4.5,
+    "comment": "Example University is a fantastic place for learning and growth."
+  },
+  {
+    "collegeId": "6",
+    "rating": 3.8,
+    "comment": "Sample College has good sports facilities but needs improvement in academics."
+  }
+]
