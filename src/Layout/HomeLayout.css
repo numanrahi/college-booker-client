@@ -1,0 +1,7 @@
+.bg-img{
+    background-image: url(../../public/jason-goodman-Oalh2MojUuk-unsplash.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
