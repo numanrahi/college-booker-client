@@ -1,0 +1,14 @@
+.border-cus{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+.research-title{
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+.research-subtitle{
+    font-size: 15px;
+    padding: 10px;
+}
