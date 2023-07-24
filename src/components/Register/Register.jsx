@@ -4,11 +4,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { FaFacebook, FaGoogle } from "react-icons/fa";
 
 const Register = () => {
   const { register, handleSubmit } = useForm();
 
-  const { createUser } = useContext(AuthContext);
+  const { createUser, googleSignIn } = useContext(AuthContext);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -19,6 +20,7 @@ const Register = () => {
     const email = data.email;
     const password = data.password;
     const confirm = data.confirmPassword;
+    const url = data.url;
     if (data.password.length < 6) {
       toast.warning("Password should be at least 6 characters long.");
       return;
@@ -38,7 +40,7 @@ const Register = () => {
             name: name,
             email: email,
           };
-          toast.success("Sign up successfully")
+          toast.success("Sign up successfully");
           //   updateUserProfile(name, url)
           //     .then(() => {
           //       fetch("https://assgignment-12-server.vercel.app/all-users", {
@@ -66,6 +68,28 @@ const Register = () => {
         });
       return;
     }
+  };
+
+  const handleGoogleSignIn = () => {
+    googleSignIn().then((result) => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+      toast.success("Login Successful");
+      // TODO: Connect to the server
+      // fetch("https://assgignment-12-server.vercel.app/all-users", {
+      //   method: "POST",
+      //   headers: {
+      //     "content-type": "application/json",
+      //   },
+      //   body: JSON.stringify(saveUser),
+      // })
+      //   .then((res) => res.json())
+      //   .then(() => {
+      //     console.log("from", from);
+      //     navigate(from, { replace: true } || "/");
+      //   });
+      navigate(from, { replace: true } || "/");
+    });
   };
 
   return (
@@ -132,6 +156,21 @@ const Register = () => {
         </div>
 
         <div>
+          <div className="fs-4">Photo URL</div>
+          <div>
+            <input
+              className="w-100 px-3 py-2"
+              type="url"
+              name="url"
+              id="url"
+              placeholder="Please paste you photo URL here"
+              required
+              {...register("url")}
+            />
+          </div>
+        </div>
+
+        <div>
           <div>
             <button
               className="w-100 bg-primary border-0 text-white py-2 rounded-2 fs-5 mt-3"
@@ -148,12 +187,28 @@ const Register = () => {
           <div>
             <div>
               <div
-                // onClick={handleGoogleSignIn}
+                onClick={handleGoogleSignIn}
                 type="button"
                 className="btn rounded-2 text-white bg-primary w-100 fs-5 mt-3"
               >
                 Register with Google
-                {/* <FaGoogle className="ms-1"></FaGoogle> */}
+                <FaGoogle className="ms-1"></FaGoogle>
+              </div>
+            </div>
+          </div>
+          <div className="d-flex gap-2 justify-content-center pt-3">
+            <div>----------</div>
+            <div>or</div>
+            <div>----------</div>
+          </div>
+          <div>
+            <div>
+              <div
+                type="button"
+                className="btn rounded-2 text-white bg-primary w-100 fs-5 mt-3"
+              >
+                Register with Facebook
+                <FaFacebook className="ms-1"></FaFacebook>
               </div>
             </div>
           </div>

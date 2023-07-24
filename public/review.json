@@ -1,32 +1,38 @@
 [
   {
+    "userId": "1",
     "collegeId": "1",
-    "rating": 4.5,
-    "comment": "Example University is a fantastic place for learning and growth."
+    "rating": 5.0,
+    "comment": "The atmosphere at the University is truly inspiring, making learning an enjoyable experience."
   },
   {
+    "userId": "2",
     "collegeId": "2",
-    "rating": 3.8,
-    "comment": "Sample College has good sports facilities but needs improvement in academics."
+    "rating": 4.8,
+    "comment": "The College provides excellent sports facilities, but I wish there were more academic resources available."
   },
   {
+    "userId": "3",
     "collegeId": "3",
     "rating": 4.5,
-    "comment": "Example University is a fantastic place for learning and growth."
+    "comment": "I had an incredible time at the University; the faculty and staff were incredibly supportive."
   },
   {
+    "userId": "4",
     "collegeId": "4",
-    "rating": 3.8,
-    "comment": "Sample College has good sports facilities but needs improvement in academics."
+    "rating": 4.3,
+    "comment": "Sample College offers a vibrant campus life, but academic programs could use some refinement."
   },
   {
+    "userId": "5",
     "collegeId": "5",
-    "rating": 4.5,
-    "comment": "Example University is a fantastic place for learning and growth."
+    "rating": 4.0,
+    "comment": "The learning opportunities at the University are diverse, fostering personal and intellectual growth."
   },
   {
+    "userId": "6",
     "collegeId": "6",
     "rating": 3.8,
-    "comment": "Sample College has good sports facilities but needs improvement in academics."
+    "comment": "I enjoyed the sports activities at the College, but there is room for improvement in their curriculum."
   }
 ]
