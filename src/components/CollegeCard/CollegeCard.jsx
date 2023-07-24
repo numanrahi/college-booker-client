@@ -5,7 +5,7 @@ const CollegeCard = () => {
   const [colleges, setColleges] = useState([]);
 
   useEffect(() => {
-    fetch("college.json")
+    fetch("http://localhost:5000/colleges")
       .then((res) => res.json())
       .then((data) => {
         const sortedColleges = data.sort((a, b) => b.researchHistory - a.researchHistory);

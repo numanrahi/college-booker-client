@@ -11,11 +11,16 @@ import Register from "./components/Register/Register.jsx";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import AuthProvider from "./Providers/AuthProvider.jsx";
+import AllColleges from "./components/AllColleges/AllColleges.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
+  },
+  {
+    path: "/colleges",
+    element: <AllColleges></AllColleges>,
   },
   {
     path: "/login",
