@@ -6,6 +6,7 @@ import CollegeCard from "../components/CollegeCard/CollegeCard";
 import GallerySection from "../components/GallarySection/GallerySection";
 import ResearchSection from "../components/ResearchSection/ResearchSection";
 import SearchSection from "../components/SearchSection/SearchSection";
+import Footer from "../components/Footer/Footer";
 
 const HomeLayout = () => {
   return (
@@ -18,6 +19,7 @@ const HomeLayout = () => {
       <CollegeCard></CollegeCard>
       <GallerySection></GallerySection>
       <ResearchSection></ResearchSection>
+      <Footer></Footer>
     </div>
   );
 };

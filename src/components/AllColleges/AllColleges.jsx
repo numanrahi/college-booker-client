@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import TopNavbar from "../TopNavbar/TopNavbar";
 import AllCollegesCard from "../AllCollegesCard/AllCollegesCard";
+import Footer from "../Footer/Footer";
 
 const AllColleges = () => {
   const [all_colleges, set_allColleges] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/colleges")
+    fetch("https://college-booker-server-ten.vercel.app/colleges")
       .then((res) => res.json())
       .then((data) => set_allColleges(data));
   }, []);
@@ -27,6 +28,7 @@ const AllColleges = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

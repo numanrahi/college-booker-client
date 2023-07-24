@@ -5,7 +5,7 @@ const CollegeCard = () => {
   const [colleges, setColleges] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/colleges")
+    fetch("https://college-booker-server-ten.vercel.app/colleges")
       .then((res) => res.json())
       .then((data) => {
         const sortedColleges = data.sort((a, b) => b.researchHistory - a.researchHistory);

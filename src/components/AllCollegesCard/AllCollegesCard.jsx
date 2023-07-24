@@ -5,7 +5,7 @@ const AllCollegesCard = ({ singleCollege }) => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://college-booker-server-ten.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => {
         const real_data = data.filter(

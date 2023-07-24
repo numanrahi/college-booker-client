@@ -9,7 +9,7 @@ const AdmissionTable = ({ colleges }) => {
       <td colSpan={2}>{colleges.admissionDate}</td>
       
       <td>
-        <Link className="text-decoration-none">
+        <Link to="/admission-form" className="text-decoration-none">
           <div className="btn btn-primary">Admission</div>
         </Link>
       </td>
