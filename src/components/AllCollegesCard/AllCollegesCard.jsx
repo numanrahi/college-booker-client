@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./AllCollegesCard.css";
+import { Link } from "react-router-dom";
 
 const AllCollegesCard = ({ singleCollege }) => {
   const [reviews, setReviews] = useState([]);
-
+  const id = singleCollege?._id;
   useEffect(() => {
     fetch("https://college-booker-server-ten.vercel.app/reviews")
       .then((res) => res.json())
@@ -56,7 +57,9 @@ const AllCollegesCard = ({ singleCollege }) => {
             <div>
               <div>Review: {avg_review}</div>
             </div>
-            <div className="btn btn-primary">Details</div>
+            <Link to={`/colleges/${id}`} className="btn btn-primary">
+              Details
+            </Link>
           </div>
         </div>
       </div>

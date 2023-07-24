@@ -1,8 +1,9 @@
 import React from "react";
 import "./SingleCollegeCard.css";
+import { Link } from "react-router-dom";
 
 const SingleCollegeCard = ({ single }) => {
-  console.log(single);
+  const id = single?._id;
   return (
     <div className="col-4 border-5">
       <div className="college-card">
@@ -30,7 +31,9 @@ const SingleCollegeCard = ({ single }) => {
                 <li key={index}>{sport}</li>
               ))}
             </ul>
-            <div className="btn btn-primary">Details</div>
+            <Link to={`/colleges/${id}`} className="btn btn-primary">
+              Details
+            </Link>
           </div>
         </div>
       </div>
