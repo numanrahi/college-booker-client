@@ -19,12 +19,12 @@ const AllColleges = () => {
           Our All Colleges
         </div>
         <div className="row">
-        {all_colleges?.map((singleCollege) => (
-          <AllCollegesCard
-          singleCollege={singleCollege}
-            key={singleCollege.id}
-          ></AllCollegesCard>
-        ))}
+          {all_colleges?.map((singleCollege) => (
+            <AllCollegesCard
+              singleCollege={singleCollege}
+              key={singleCollege.id}
+            ></AllCollegesCard>
+          ))}
         </div>
       </div>
     </div>

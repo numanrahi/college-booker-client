@@ -1,12 +1,15 @@
 import React from "react";
-import './AllCollegesCard.css'
+import "./AllCollegesCard.css";
 
 const AllCollegesCard = ({ singleCollege }) => {
-
   return (
     <div className="col-md-6 mb-4 border-5">
       <div className="college-card">
-        <img className="college-image" src={singleCollege.image} alt="College Image" />
+        <img
+          className="college-image"
+          src={singleCollege.image}
+          alt="College Image"
+        />
         <div className="college-info">
           <h2 className="college-name">{singleCollege.name}</h2>
           <p className="admission-dates">

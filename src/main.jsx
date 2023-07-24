@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import AuthProvider from "./Providers/AuthProvider.jsx";
 import AllColleges from "./components/AllColleges/AllColleges.jsx";
+import Admission from "./components/Admission/Admission.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/colleges",
     element: <AllColleges></AllColleges>,
+  },
+  {
+    path: '/admission',
+    element: <Admission></Admission>
   },
   {
     path: "/login",

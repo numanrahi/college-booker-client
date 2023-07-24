@@ -38,6 +38,7 @@ const Register = () => {
             name: name,
             email: email,
           };
+          toast.success("Sign up successfully")
           //   updateUserProfile(name, url)
           //     .then(() => {
           //       fetch("https://assgignment-12-server.vercel.app/all-users", {

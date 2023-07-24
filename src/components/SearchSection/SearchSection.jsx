@@ -1,4 +1,3 @@
-import React from "react";
 import './SearchSection.css'
 
 const SearchSection = () => {
@@ -10,7 +9,7 @@ const SearchSection = () => {
       </div>
 
       <form
-      //    onSubmit={handleSearch}
+        //  onSubmit={handleSearch}
       >
         <div className="text-center text-secondary py-2 mb-5">
           Discover Your Dream College - Where Futures Take Flight!
