@@ -1,3 +1,44 @@
-.class-img{
-    border-radius: 20px;
+.college-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 0 auto;
+  width: 300px;
+  height: 620px;
+}
+
+.college-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.college-name {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.admission-dates {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.events ul,
+.sports ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.events li,
+.sports li {
+  margin-bottom: 4px;
+}
+
+.research-history {
+  font-size: 14px;
+  margin-bottom: 8px;
 }

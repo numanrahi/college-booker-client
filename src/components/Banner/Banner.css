@@ -1,0 +1,27 @@
+.banner-text {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    width: 75%;
+    margin-right: auto;
+    padding: 20px 50px !important;
+    text-shadow: 0 0 10px #00000033;
+    line-height: 80px;
+}
+
+.explore {
+    padding-left: 50px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 10px !important;
+    transition: 0.5s ease-in-out;
+}
+.explore:hover {
+    color: wheat;
+    gap: 5px !important;
+}
+.bg-white-cus-2{
+    background-color: rgba(255, 255, 255, 0.596) !important;
+    border-radius: 20px;
+}

@@ -4,6 +4,7 @@ import Banner from "../components/Banner/Banner";
 import "./HomeLayout.css";
 import CollegeCard from "../components/CollegeCard/CollegeCard";
 import GallerySection from "../components/GallarySection/GallerySection";
+import ResearchSection from "../components/ResearchSection/ResearchSection";
 
 const HomeLayout = () => {
   return (
@@ -14,6 +15,7 @@ const HomeLayout = () => {
       </div>
       <CollegeCard></CollegeCard>
       <GallerySection></GallerySection>
+      <ResearchSection></ResearchSection>
     </div>
   );
 };
